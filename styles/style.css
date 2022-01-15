@@ -1,17 +1,25 @@
 body {
-  background-color: rgba(252, 241, 241, 0.685);
+  width: 1200px;
+  margin: auto;
+  background-color: rgb(227 227 225);
+
 }
 .header {
 }
-
+.header h2{
+  font-size: 30px;
+  margin: 0;
+  /* padding-left: 100px; */
+}
 /* main-section-style start */
 .container {
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
 }
 .content {
+  position: relative;
   width: 582px;
   height: 270px;
   padding: 40px;
@@ -19,8 +27,8 @@ body {
 }
 .content-title {
   font-family: ;
-  font-size: 40px;
-  font-weight: 800px;
+  font-size: 60px;
+  font-weight: 1000px;
   margin: 0;
 }
 .btn {
@@ -29,10 +37,12 @@ body {
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
+  font-size: 20px;
 }
 
 .thambnail {
-  width: 377px;
+  width: 475px;
+  height: 475px;
   border: 1px solid #ebe6db;
   border-radius: 268px;
 }
@@ -42,10 +52,17 @@ body {
 }
 /* main-section-style-end */
 
-/* them style */
+/* collection them style */
+.main-section{
+   width: 1100px;
+   margin: auto;
+  margin-bottom: 30px;
+}
 .main-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+ 
 }
 .section-title {
   text-align: center;
@@ -68,26 +85,31 @@ body {
 .blog-title {
   margin: 0;
   font-size: 40px;
+  margin: 10px 0;
 }
 .dollar {
   margin: 0;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .ratings {
   display: flex;
   padding: 0;
-  font-size: 20px;
+  font-size: 15px;
 }
 .ratings li {
   list-style: none;
+  margin: 0 2px;
 }
-.fa-star {
+.fa-star,.fa-star-half-alt {
   color: orange;
 }
-
+.ratings span{
+  font-size: 20px;
+  margin-left: 2px;
+  font-weight: 600;
+}
 /* footer style */
-
 .footer {
   background-color: black;
   color: white;
@@ -96,7 +118,7 @@ body {
   height: 200px;
 }
 .footer h3 {
-  color: green;
+ font-weight: 600;
   font-size: 30px;
   margin: 0;
   padding: 20px;
@@ -104,4 +126,12 @@ body {
 .footer p {
   font-size: 25px;
   margin: 0;
+}
+.footer-icon{
+  display: flex;
+  justify-content: center;
+}
+.footer-icon a{font-size: 40px;
+color: white;
+margin: 10px;
 }
