@@ -2,19 +2,38 @@ body {
   width: 1200px;
   margin: auto;
   background-color: rgb(227 227 225);
+  font-family: 'Be Vietnam Pro', sans-serif;
 
 }
+/* navber style */
 .header {
+  display: flex;
 }
 .header h2{
+  width: 30%;
   font-size: 30px;
   margin: 0;
-  /* padding-left: 100px; */
 }
+.nav-ber{
+  display: flex;
+  margin: 0;
+  line-height: 40px;
+}
+.nav-ber li{
+list-style: none;
+margin: 0 20px;
+}
+.nav-ber li a{
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+}
+/* navber style */
+
 /* main-section-style start */
 .container {
-  /* width: 1200px; */
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   margin: auto;
 }
@@ -26,7 +45,7 @@ body {
   top: 100px;
 }
 .content-title {
-  font-family: ;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 60px;
   font-weight: 1000px;
   margin: 0;
@@ -43,8 +62,10 @@ body {
 .thambnail {
   width: 475px;
   height: 475px;
-  border: 1px solid #ebe6db;
+  border: 1px solid #f5f5f5;
   border-radius: 268px;
+  position: relative;
+  top: 50px;
 }
 .thambnail img {
   width: 440px;
@@ -56,15 +77,15 @@ body {
 .main-section{
    width: 1100px;
    margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .main-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
- 
 }
 .section-title {
+  font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
   font-size: 40px;
 }
@@ -83,6 +104,7 @@ body {
   border-radius: 5px;
 }
 .blog-title {
+  font-family: 'Merriweather Sans', sans-serif;
   margin: 0;
   font-size: 40px;
   margin: 10px 0;
@@ -109,8 +131,16 @@ body {
   margin-left: 2px;
   font-weight: 600;
 }
+.seemore{
+  color: palevioletred;
+  float: right;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px;
+}
 /* footer style */
 .footer {
+  margin-top: 20px;
   background-color: black;
   color: white;
   width: 100%;
@@ -118,6 +148,7 @@ body {
   height: 200px;
 }
 .footer h3 {
+  font-family: 'Merriweather Sans', sans-serif;
  font-weight: 600;
   font-size: 30px;
   margin: 0;
@@ -134,4 +165,51 @@ body {
 .footer-icon a{font-size: 40px;
 color: white;
 margin: 10px;
+}
+
+/* Mobile device screen */
+@media only screen and (max-width:688px) {
+  .container{
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+  .content{
+    width: 100%;
+  }
+  .main-section{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  .section-title{
+    text-align: left;
+  }
+  .main-container{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .footer{
+    width:100%;
+  }
+}
+
+/* ipad screan device */
+@media only screen and (min-width:688px) and (max-width:992px) {
+  .container{
+    width: 100%;
+    display: block;
+  }
+  .content{
+    width: 100%;
+  }
+  /* .main-section{width: 100%;} */
+  .main-container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+  }
+  .footer{
+    width:100%;
+  }
 }
