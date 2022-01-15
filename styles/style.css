@@ -33,7 +33,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  margin-left: 300px;
+  margin-left: 30px;
   margin-bottom: 100px;
   height: 500px;
 }
@@ -95,9 +95,14 @@ body {
   border-radius: 10px;
   background-color: white;
   padding: 15px;
+  overflow: hidden;
 }
-.bannar {
+
+.blog:hover .bannar{
+  transform: scale(1.1);
+  transition: transform 0.5s;
 }
+
 .bannar img {
   width: 100%;
   /* height: 256px; */
@@ -138,6 +143,28 @@ body {
   font-size: 20px;
   font-weight: 600;
   padding: 8px;
+}
+/* extra item style */
+.extra{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.photo-pic{
+  margin-left: 200px;
+}
+.photo-pic img{
+  width: 400px;
+}
+.extra-des{
+width: 400px;
+}
+.extra-des h2{
+  font-size: 30px;
+  font-weight: 900px;
 }
 /* footer style */
 .footer {
@@ -192,7 +219,14 @@ body {
   .main-container {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
-    
+  }
+  .extra{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+  }
+  .photo-pic{
+    margin: 0;
   }
   .footer {
     max-width:100%;
@@ -223,7 +257,14 @@ body {
   .main-container {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    
+  }
+  .extra{
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+  }
+  .photo-pic{
+    margin: 0;
   }
   .footer {
     max-width: 100%;
